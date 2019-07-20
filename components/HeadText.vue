@@ -1,6 +1,6 @@
 <template>
   <component
-    v-bind:is="headTagByHeadLebel({level})"
+    :is="headTagByHeadLevel({level})"
     class="o_c-head-text"
   >
     {{ text }}
@@ -32,7 +32,7 @@ export default class HeadText<HeadTextProps> extends Vue {
   })
   public level?: string;
 
-  public headTagByHeadLebel({ level }) {
+  public headTagByHeadLevel({ level }) {
     return `h${level}`;
   }
 }
