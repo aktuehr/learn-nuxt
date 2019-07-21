@@ -12,14 +12,17 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { Vue, Component } from "vue-property-decorator";
+
 import HeadText from '../components/HeadText.vue';
 
-export default {
+@Component({
   components: {
     HeadText
   }
-}
+})
+export default class indexPage extends Vue {}
 </script>
 
 <style>
